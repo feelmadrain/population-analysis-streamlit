@@ -202,7 +202,7 @@ if st.session_state.x == 2:
           if population_plot:
               data =pd.DataFrame({'Years':years, 'Population':Country1})
               st.subheader('Graph: Population(Years)')
-              s = st.line_chart(data,x='Years', y='Population', x_label='Год',y_label='Население')
+              s = st.line_chart(data,x='Years', y='Population')
               
                     
                     
