@@ -125,10 +125,10 @@ if st.session_state.x == 2:
     Country1 = df[df['Country Name'] == Name1].values[0][1:].astype(int)
     B = df.loc[df['Country Name'] == Name1].index[0] # индекс страны 1
     with st.sidebar:
-        with st.container(key='g'):
+        with st.container():
             st.write('Первое приложение на streamlit😶‍🌫️🥶 \n *tg*: @jktm18📱⌨️ \n *gmail*:kulikov123451@gmail.com📧🖥️')
         with st.form('my form'):
-             with st.container(key='j'): 
+             with st.container(): 
                image_setter(st.session_state.image)
                
                with st.expander(':rainbow[**МЕНЮ**]', expanded=False):
@@ -142,7 +142,7 @@ if st.session_state.x == 2:
                               population_max = st.checkbox("Показать максимальное население") 
                             
                             submitted = st.form_submit_button("Подтвердить",type='primary')
-        with st.container(border=True,key='y'):
+        with st.container(border=True):
            submitted_two = st.toggle('🔙:violet[Смена страны]')
            submitted_three = st.toggle('🌃:violet[Про дата сет]')
             
