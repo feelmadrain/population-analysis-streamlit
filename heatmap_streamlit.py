@@ -10,7 +10,6 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
-from scipy import stats as st
 import seaborn as sns
 import streamlit as st
 import altair as alt
